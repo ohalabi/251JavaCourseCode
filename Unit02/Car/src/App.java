@@ -12,10 +12,11 @@ public class App {
         System.out.println("Engine is " + toyta.getEngine());
         System.out.println("Wheels is " + toyta.getWheels());
 
+        System.out.println();
         Car honda = new Car();
         honda.setModel("Civic");
         honda.setColor("Blue");
-        honda.setWheels(4);
+        honda.setWheels(100);
         honda.setEngine("iVEC");
         honda.setDoors(5);
         System.out.println("Model is " + honda.getModel());
@@ -24,9 +25,10 @@ public class App {
         System.out.println("Engine is " + honda.getEngine());
         System.out.println("Wheels is " + honda.getWheels());
 
-        // test overloading
-        System.out.printf("int addition: %d%n", honda.add(2, 3));
-        System.out.printf("double addition: %.1f%n", honda.add(2.2, 3.4));
-        System.out.printf("double 3 addition: %.1f%n", honda.add(2.3, 3.2, 3.5));
+        // Testing method overloading
+        Car overloading = new Car();
+        System.out.printf("%n int addition : %d%n", overloading.add(2, 3));
+        System.out.printf("double addition : %.2f%n", overloading.add(2.4, 3.7));
+        System.out.printf("double three additions : %.2f%n", overloading.add(2.4, 3.7, 4.5));
     }
 } // end of class

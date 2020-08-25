@@ -18,7 +18,11 @@ public class Car {
     }
 
     public void setWheels(int wheels) {
-        this.wheels = wheels;
+        if (wheels <= 5) {
+            this.wheels = wheels;
+        } else {
+            this.wheels = 4;
+        }
     }
 
     public String getEngine() {
@@ -39,10 +43,10 @@ public class Car {
 
     public void setModel(String model) {
         String validModel = model.toLowerCase();
-        if (validModel.equals("camry") || validModel.equals("prada")) {
+        if (validModel.equals("civic") || validModel.equals("prada")) { // Data validation
             this.model = model;
         } else {
-            this.model = "Unkonwn";
+            this.model = "Unknown";
         }
     }
 
@@ -51,20 +55,14 @@ public class Car {
     }
 
     // Method Overloading
-    private int a;
-    private int b;
-    private int c;
-
-    // integer addition
-    public int add (int a, int b){
+    public int add(int a, int b) {
         return a + b;
     }
-        // double addition
-    public double add (double a, double b){
-        return a + b;
+    public double add(double a, double b) {
+        return  a + b;
     }
-
-    public double add(double a, double b, double c) {
+   public double add(double a, double b, double c) {
         return  a + b + c;
     }
+
 }
