@@ -38,9 +38,33 @@ public class Car {
     }
 
     public void setModel(String model) {
-        this.model = model;
+        String validModel = model.toLowerCase();
+        if (validModel.equals("camry") || validModel.equals("prada")) {
+            this.model = model;
+        } else {
+            this.model = "Unkonwn";
+        }
     }
+
     public String getModel() {
         return model;
+    }
+
+    // Method Overloading
+    private int a;
+    private int b;
+    private int c;
+
+    // integer addition
+    public int add (int a, int b){
+        return a + b;
+    }
+        // double addition
+    public double add (double a, double b){
+        return a + b;
+    }
+
+    public double add(double a, double b, double c) {
+        return  a + b + c;
     }
 }
