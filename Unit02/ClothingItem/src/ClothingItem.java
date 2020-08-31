@@ -1,4 +1,9 @@
 public class ClothingItem {
+    // add static varibles
+    public static final String SHIRT = "Shirt";
+    public static final String PANTS = "Pants";
+    public static final String SHOES = "Shoes";
+
     private String type;
     private String size;
     private double price;

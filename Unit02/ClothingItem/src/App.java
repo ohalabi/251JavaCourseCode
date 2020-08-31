@@ -3,7 +3,7 @@ import java.util.Locale;
 
 public class App {
     public static void main(String[] args) {
-        ClothingItem item = new ClothingItem("Shirt", "M", 199.99, 200); // call the default constructor
+        ClothingItem item = new ClothingItem(ClothingItem.SHIRT, "M", 199.99, 200); // call the default constructor
 //        item.setType("Shirt");
 //        item.setSize("M");
 //        item.setPrice(199.99);
@@ -22,7 +22,8 @@ public class App {
         System.out.println(item2.getQuantity());
 
         //calling constructor #3 with one parameter
-        var item3 = new ClothingItem("Pants");
+//        ClothingItem.PANTS = "Shoes";
+        var item3 = new ClothingItem(ClothingItem.PANTS);
         System.out.println(item3.getType());
         System.out.println(item3.getSize());
         System.out.println(item3.getPrice());
@@ -39,5 +40,6 @@ public class App {
         var output = String.format("Your %S order will cost %s",
                 item.getType(), currencyForamtter.format(totalPrice));
         System.out.println(output);
+
     }
 }
