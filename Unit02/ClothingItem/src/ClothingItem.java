@@ -1,5 +1,5 @@
 public class ClothingItem {
-    // add static varibles
+    // add static variables
     public static final String SHIRT = "Shirt";
     public static final String PANTS = "Pants";
     public static final String SHOES = "Shoes";
