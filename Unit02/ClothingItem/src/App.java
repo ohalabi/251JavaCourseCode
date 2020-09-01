@@ -3,7 +3,11 @@ import java.util.Locale;
 
 public class App {
     public static void main(String[] args) {
-        ClothingItem item = new ClothingItem(ClothingItem.SHIRT, "M", 199.99, 200); // call the default constructor
+        ClothingItem item = new ClothingItem(ClothingItem.SHIRT,
+                ClothingSize.S,
+                199.99,
+                200); // call the default constructor
+
 //        item.setType("Shirt");
 //        item.setSize("M");
 //        item.setPrice(199.99);
@@ -37,9 +41,16 @@ public class App {
         var locale = new Locale("ar", "QA");
         var numberFormatter = NumberFormat.getNumberInstance(locale);
         var currencyForamtter = NumberFormat.getCurrencyInstance(locale);
-        var output = String.format("Your %S order will cost %s",
+        var output = String.format("Your %s %S order will cost %s",
+                item.getSize(),
                 item.getType(), currencyForamtter.format(totalPrice));
         System.out.println(output);
+
+        //Iterate through the enum
+        for (var size : ClothingSize.values()) {
+            System.out.println( size.toString());
+        }
+
 
     }
 }
