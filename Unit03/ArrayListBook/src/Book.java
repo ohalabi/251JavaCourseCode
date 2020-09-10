@@ -27,7 +27,7 @@ public class Book {
         //add in another way
         myLibrary.add(new Book("C#"));
         myLibrary.add(new Book("C++"));
-        myLibrary.add(new Book("Fortan"));
+        myLibrary.add(new Book("Fortran"));
 
         display(myLibrary, "Library list contains new three books: ");
 
@@ -42,7 +42,7 @@ public class Book {
         //remove by search for title and get the index of the object that contain the title
         int indexOfBookToDelete = -1; // -1 mean not found
         for (Book temp: myLibrary) {
-            if (temp.getBookTitle().equalsIgnoreCase("fortan")){
+            if (temp.getBookTitle().equalsIgnoreCase("fortran")){
                 indexOfBookToDelete = myLibrary.indexOf(temp);
             }
         }
@@ -50,7 +50,7 @@ public class Book {
             display(myLibrary, "book not found!");
         }else{
             myLibrary.remove(indexOfBookToDelete);
-            display(myLibrary, "Libraby after fortan C#:");
+            display(myLibrary, "Library after fortran C#:");
         }
         myLibrary.set(0, new Book("Objective C"));
         display(myLibrary, "after setting new element at 0: ");
