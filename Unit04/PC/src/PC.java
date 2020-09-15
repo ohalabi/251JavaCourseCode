@@ -18,7 +18,7 @@ public class PC {
         motherboard.loadProgram("OSX 15.5");
         drawLogo();
     }
-    public void drawLogo() {
+    private void drawLogo() {
         monitor.drawPixelAt(1800, 500, "green");
     }
 

@@ -19,6 +19,8 @@ public class PCTest {
 //        thePC.getMotherboard().loadProgram("Windows Pro 10");
 //        thePC.getMonitor().drawPixelAt(2500, 400, "red");
 
+        // customized method
         thePC.powerUp();
+
     } //end main
 } // end PC class
