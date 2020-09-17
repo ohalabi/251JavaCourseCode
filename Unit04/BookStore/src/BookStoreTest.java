@@ -4,7 +4,7 @@
 public class BookStoreTest {
     public static void main(String[] args) {
 
-        Book orgBook = new Book("Hunger Games");
+        Book orgBook = new Book("Hunger Game");
         BookStore orgStore = new BookStore("Jarir", orgBook);
 
         Book copybook = new Book("Hunger Games");
@@ -19,7 +19,7 @@ public class BookStoreTest {
             System.out.println("the two book stores have same value");
         }
         else {
-            System.out.println("the two book stores do not the same value");
+            System.out.println("the two book stores do not have the same value");
         }
     }
 }
