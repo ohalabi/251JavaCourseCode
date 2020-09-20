@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Osama Halabi on 2020/09/17.
  */
 public class GradeBook {
     private Course course;
-    private ArrayList<Student> students; // stacke in this line
+    private List<Student> students; // stacked in this line
 
     public GradeBook(Course course) {
         this.course = course;
@@ -38,7 +39,7 @@ public class GradeBook {
         return maxGrade;
     }
 
-    // calculate min garde
+    // calculate min grade
     public double getMinGrade () {
         double minGrade = students.get(0).getGrade();//get grade for the first student in the list
 
