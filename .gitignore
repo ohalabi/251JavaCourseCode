@@ -3,6 +3,7 @@
 DS_STORE
 .idea/
 *.iml
+*.xml
 
 # Default ignored files
 /shelf/
