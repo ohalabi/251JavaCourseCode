@@ -1,2 +1,13 @@
 # Project exclude paths
 /out/
+# Default ignored files
+/shelf/
+/workspace.xml
+/modules.xml
+
+# Project exclude paths
+out/
+DS_STORE
+.idea/
+./idea/*.iml
+./idea/*.xml
