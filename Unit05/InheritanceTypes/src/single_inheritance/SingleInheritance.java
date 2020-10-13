@@ -1,4 +1,4 @@
-package SingleInheritance;
+package single_inheritance;
 
 /**
  * Created by Osama Halabi on 2020/09/22.

@@ -1,4 +1,4 @@
-package HierarchalInheritance;
+package hierarchal_Inheritance;
 
 /**
  * Created by Osama Halabi on 2020/09/22.

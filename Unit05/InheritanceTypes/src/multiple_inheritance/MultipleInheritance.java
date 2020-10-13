@@ -1,4 +1,4 @@
-package MultipleInheritance;
+package multiple_inheritance;
 
 /**
  * Created by Osama Halabi on 2020/09/22.
