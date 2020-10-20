@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="149.0" prefWidth="286.0" spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_3.basics.gettime.TimeController">
+   <children>
+      <Label fx:id="timeLabel" text="?" textFill="#2327f5">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font></Label>
+      <Button mnemonicParsing="false" onAction="#handleGetTime" text="What time is it?">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+   </children>
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_2.welcomefx.HelloJavaFX.Controller">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="294.0">
+         <children>
+            <Label fx:id="helloLabel" text="..." textAlignment="CENTER" textFill="#d7271e">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#handleHelloBtn" text="Say Hello" textFill="#2b37da">
+               <VBox.margin>
+                  <Insets left="100.0" top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
