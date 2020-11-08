@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/Unit02/ClothingItem/ClothingItem.iml" filepath="$PROJECT_DIR$/Unit02/ClothingItem/ClothingItem.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit05/Constructors and Overriding/Constructors and Overriding.iml" filepath="$PROJECT_DIR$/Unit05/Constructors and Overriding/Constructors and Overriding.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit03/ExceptionHandlingExamples/ExceptionHandlingExamples.iml" filepath="$PROJECT_DIR$/Unit03/ExceptionHandlingExamples/ExceptionHandlingExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unit08/Files/Files.iml" filepath="$PROJECT_DIR$/Unit08/Files/Files.iml" />
       <module fileurl="file://$PROJECT_DIR$/Revision/Football Tournament/Football Tournament.iml" filepath="$PROJECT_DIR$/Revision/Football Tournament/Football Tournament.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit04/GradeBook/GradeBook.iml" filepath="$PROJECT_DIR$/Unit04/GradeBook/GradeBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit05/InheritanceTypes/InheritanceTypes.iml" filepath="$PROJECT_DIR$/Unit05/InheritanceTypes/InheritanceTypes.iml" />
@@ -30,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/Unit06/Polymorphism Demo/Polymorphism Demo.iml" filepath="$PROJECT_DIR$/Unit06/Polymorphism Demo/Polymorphism Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit03/TwoDArray/TwoDArray.iml" filepath="$PROJECT_DIR$/Unit03/TwoDArray/TwoDArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit03/VarArgsTest/VarArgsTest.iml" filepath="$PROJECT_DIR$/Unit03/VarArgsTest/VarArgsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unit09/chp14_Strings/chp14_Strings.iml" filepath="$PROJECT_DIR$/Unit09/chp14_Strings/chp14_Strings.iml" />
     </modules>
   </component>
 </project>

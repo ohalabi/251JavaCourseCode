@@ -7,10 +7,11 @@ public class Account {
    private String firstName;
    private String lastName;
    private double balance;
-   
+
+
    // initializes an Account with default values
-   public Account() {this(0, "", "", 0.0);} 
-  
+   public Account() {this(0, "", "", 0.0);}
+
    // initializes an Account with provided values
    public Account(int accountNumber, String firstName, 
       String lastName, double balance) {

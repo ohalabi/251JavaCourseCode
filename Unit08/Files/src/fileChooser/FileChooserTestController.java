@@ -1,6 +1,7 @@
 package fileChooser;// Fig. 13.6: FileChooserTestController.java
 // Displays information about a selected file or folder. 
 
+import com.sun.glass.ui.CommonDialogs;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -25,15 +26,15 @@ public class FileChooserTestController {
    @FXML
    private void selectFileButtonPressed(ActionEvent e) {
       // configure dialog allowing selection of a file 
-      FileChooser fileChooser = new FileChooser();               
+      FileChooser fileChooser = new FileChooser();
       fileChooser.setTitle("Select File");
 
       // display files in folder from which the app was launched
-      fileChooser.setInitialDirectory(new File(".")); 
+      fileChooser.setInitialDirectory(new File("."));
 
       // display the FileChooser
       File file = fileChooser.showOpenDialog(
-         borderPane.getScene().getWindow());               
+         borderPane.getScene().getWindow());
 
       // process selected Path or display a message
       if (file != null) {

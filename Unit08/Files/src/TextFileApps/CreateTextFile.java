@@ -1,6 +1,7 @@
 package TextFileApps;// Fig. 15.3: CreateTextFile.java
 // Writing data to a sequential text file with class Formatter.
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Formatter;
@@ -11,11 +12,11 @@ import java.util.Scanner;
 public class CreateTextFile {
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
+        //ask use to input account data
         System.out.printf("%s%n%s%n? ",
                 "Enter account number, first name, last name and balance.",
                 "Enter end-of-file indicator to end input.");
 
-        //add: set the file for append mode using FileWriter!
         FileWriter fw = new FileWriter("clients.txt", true);
 
         // open clients.txt, output data to the file then close clients.txt

@@ -11,8 +11,8 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
-            <Button fx:id="selectFileButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectFileButtonPressed" text="Select File" />
-          <Button fx:id="selectDirectoryButton" mnemonicParsing="false" onAction="#selectDirectoryButtonPressed" text="Select Directory" />
+            <Button fx:id="selectFileButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectFileButtonPressed" text="🗄 Select File" />
+          <Button fx:id="selectDirectoryButton" mnemonicParsing="false" onAction="#selectDirectoryButtonPressed" text="📁 Select Directory" />
         </items>
       </ToolBar>
    </top>
