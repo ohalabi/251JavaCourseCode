@@ -1,38 +1,41 @@
-// Fig. 14.18: TokenTest.java
-// Tokenizing with String method split
-import java.util.Scanner;
-import java.util.StringTokenizer;
+// Fig. 11.7: UsingChainedExceptions.java
+// Chained exceptions.
 
-public class TokenTest {
+public class UsingChainedExceptions {
    public static void main(String[] args) {
-      // get sentence
-//      Scanner scanner = new Scanner(System.in);
-//      System.out.println("Enter a sentence and press Enter");
-//      String sentence = scanner.nextLine();
+      try {
+         method1(); 
+      } 
+      catch (Exception exception) { // exceptions thrown from method1
+         exception.printStackTrace();
+      } 
+   } 
 
-      // process user sentence
-//      String[] tokens = sentence.split(" "); // return array of tokens
-//      System.out.printf("Number of elements: %d\nThe tokens are:\n",
-//         tokens.length);
-//
-//      for (String token : tokens) {
-//         System.out.println(token);
-//      }
+   // call method2; throw exceptions back to main
+   public static void method1() throws Exception {
+      try {
+         method2(); 
+      } 
+      catch (Exception exception) { // exception thrown from method2
+         throw new Exception("Exception thrown in method1", exception);
+      } 
+   }
 
-      //test with token
-      String line = new String("c = 1 + 2 + 3 -4");
-      StringTokenizer tok = new StringTokenizer(line, "+=-");
-      System.out.println("The number of tokens are: " + tok.countTokens());
-
-      //print the tokens
-      while (tok.hasMoreTokens()) {
-         System.out.println("Remaining are: " + tok.countTokens());
-         System.out.println(tok.nextToken());
+   // call method3; throw exceptions back to method1
+   public static void method2() throws Exception {
+      try {
+         method3();
+      } 
+      catch (Exception exception) { // exception thrown from method3
+         throw new Exception("Exception thrown in method2", exception);
       }
+   } 
 
+   // throw Exception back to method2
+   public static void method3() throws Exception {
+      throw new Exception("Exception thrown in method3");
    } 
 } 
-
 
 /**************************************************************************
  * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *

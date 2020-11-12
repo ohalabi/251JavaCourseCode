@@ -31,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/Unit06/Polymorphism Demo/Polymorphism Demo.iml" filepath="$PROJECT_DIR$/Unit06/Polymorphism Demo/Polymorphism Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit03/TwoDArray/TwoDArray.iml" filepath="$PROJECT_DIR$/Unit03/TwoDArray/TwoDArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit03/VarArgsTest/VarArgsTest.iml" filepath="$PROJECT_DIR$/Unit03/VarArgsTest/VarArgsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unit10/chp11_Exceptions/chp11_Exceptions.iml" filepath="$PROJECT_DIR$/Unit10/chp11_Exceptions/chp11_Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unit09/chp14_Strings/chp14_Strings.iml" filepath="$PROJECT_DIR$/Unit09/chp14_Strings/chp14_Strings.iml" />
     </modules>
   </component>

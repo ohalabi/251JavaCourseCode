@@ -1,38 +1,26 @@
-// Fig. 14.18: TokenTest.java
-// Tokenizing with String method split
+// Fig. 11.2: DivideByZeroNoExceptionHandling.java
+// Integer division without exception handling.
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
-public class TokenTest {
-   public static void main(String[] args) {
-      // get sentence
-//      Scanner scanner = new Scanner(System.in);
-//      System.out.println("Enter a sentence and press Enter");
-//      String sentence = scanner.nextLine();
-
-      // process user sentence
-//      String[] tokens = sentence.split(" "); // return array of tokens
-//      System.out.printf("Number of elements: %d\nThe tokens are:\n",
-//         tokens.length);
-//
-//      for (String token : tokens) {
-//         System.out.println(token);
-//      }
-
-      //test with token
-      String line = new String("c = 1 + 2 + 3 -4");
-      StringTokenizer tok = new StringTokenizer(line, "+=-");
-      System.out.println("The number of tokens are: " + tok.countTokens());
-
-      //print the tokens
-      while (tok.hasMoreTokens()) {
-         System.out.println("Remaining are: " + tok.countTokens());
-         System.out.println(tok.nextToken());
-      }
-
+public class DivideByZeroNoExceptionHandling {
+   // demonstrates throwing an exception when a divide-by-zero occurs
+   public static int quotient(int numerator, int denominator) {
+      return numerator / denominator; // possible division by zero
    } 
-} 
 
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in); 
+
+      System.out.print("Please enter an integer numerator: ");
+      int numerator = scanner.nextInt();
+      System.out.print("Please enter an integer denominator: ");
+      int denominator = scanner.nextInt();
+
+      int result = quotient(numerator, denominator);
+      System.out.printf(
+         "%nResult: %d / %d = %d%n", numerator, denominator, result);
+   }
+} 
 
 /**************************************************************************
  * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *

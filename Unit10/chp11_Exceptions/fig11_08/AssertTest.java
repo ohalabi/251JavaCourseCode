@@ -1,38 +1,21 @@
-// Fig. 14.18: TokenTest.java
-// Tokenizing with String method split
+// Fig. 11.8: AssertTest.java
+// Checking with assert that a value is within range
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
-public class TokenTest {
+public class AssertTest {
    public static void main(String[] args) {
-      // get sentence
-//      Scanner scanner = new Scanner(System.in);
-//      System.out.println("Enter a sentence and press Enter");
-//      String sentence = scanner.nextLine();
+      Scanner input = new Scanner(System.in);
+      
+      System.out.print("Enter a number between 0 and 10: ");
+      int number = input.nextInt();
+      
+      // assert that the value is >= 0 and <= 10
+      assert (number >= 0 && number <= 10) : "bad number: " + number;
 
-      // process user sentence
-//      String[] tokens = sentence.split(" "); // return array of tokens
-//      System.out.printf("Number of elements: %d\nThe tokens are:\n",
-//         tokens.length);
-//
-//      for (String token : tokens) {
-//         System.out.println(token);
-//      }
-
-      //test with token
-      String line = new String("c = 1 + 2 + 3 -4");
-      StringTokenizer tok = new StringTokenizer(line, "+=-");
-      System.out.println("The number of tokens are: " + tok.countTokens());
-
-      //print the tokens
-      while (tok.hasMoreTokens()) {
-         System.out.println("Remaining are: " + tok.countTokens());
-         System.out.println(tok.nextToken());
-      }
+      System.out.printf("You Entered %d", number );
 
    } 
 } 
-
 
 /**************************************************************************
  * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *
